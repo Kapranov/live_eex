@@ -1,3 +1,3 @@
-defmodule LiveEex do
+defmodule LiveEEx do
   @moduledoc false
 end

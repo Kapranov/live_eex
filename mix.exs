@@ -1,4 +1,4 @@
-defmodule LiveEex.MixProject do
+defmodule LiveEEx.MixProject do
   use Mix.Project
 
   def project do
@@ -31,10 +31,11 @@ defmodule LiveEex.MixProject do
       {:excoveralls, "~> 0.10.3", only: :test},
       {:ex_unit_notifier, "~> 0.1.4", only: :test},
       {:mix_test_watch, "~> 0.9.0", only: :dev, runtime: false},
+      {:phoenix_html, github: "phoenixframework/phoenix_html"},
       {:remix, "~> 0.0.2", only: :dev}
     ]
   end
 
   defp applications(:dev), do: applications(:all) ++ [:remix]
-  defp applications(_all), do: [:logger]
+  defp applications(_all), do: [:logger, :eex]
 end

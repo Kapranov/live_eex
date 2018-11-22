@@ -1,6 +1,5 @@
-defmodule LiveEexTest do
-  use ExUnit.Case
-  doctest LiveEex
+defmodule LiveEExTest do
+  use ExUnit.Case, async: true
 
   test "the truth" do
     assert 1 + 1 == 2
